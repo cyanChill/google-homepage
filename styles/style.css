@@ -1,0 +1,138 @@
+:root {
+    --primary-dark: #202124;
+    --secondary-dark: #171717;
+
+    --accent-300: #999D95;
+    --accent-600: #303134;
+    --neutral-100: #fff;
+    --neutral-300: #E2E2E3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-300);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    padding: 1em 1.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    color: var(--neutral-100);
+    background-color: var(--accent-600);
+}
+
+img {
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Fix issue with the additional 4px below when wrapped with an anchor tag */
+.material-icons { 
+    vertical-align: bottom;
+}
+
+.material-icons.md-light { color: var(--neutral-100); }
+.material-icons.md-light.md-inactive { color: var(--neutral-300); }
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--neutral-100);
+    position: relative;
+    height: 100vh;
+}
+
+/* Navbar */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1em
+}
+
+#google-app-links {
+    flex-direction: row;
+}
+
+#google-app-links a {
+    color: var(--neutral-100);
+}
+
+#google-app-links button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+#google-app-links button.glow:hover {
+    background-color: #2F3034;
+    box-shadow: 0 0 0 9px #2F3034;
+}
+
+.profile-image {
+    border-radius: 50%;
+}
+
+/* Main Content */
+main {
+    width: min(90vw, 36.375em);
+}
+
+#google-logo {
+    width: min(90vw, 24em);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75em;
+    border-radius: 2em;
+    background-color: transparent;
+    border: 1px solid var(--accent-300);
+    margin: 1.5em 0;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--secondary-dark);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+}
+
+
+
+/* Utilitiy Class */
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.split {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.glow:hover {
+    box-shadow: 0 0 10px 3px rgba(255,255,255,0.3);
+}
