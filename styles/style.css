@@ -131,7 +131,6 @@ main {
     border: 1px solid var(--accent-300);
     border-radius: 2em;
     color: var(--neutral-100);
-    padding: 0.75em;
     margin: 1.5em 0;
 }
 
@@ -146,6 +145,7 @@ main {
 
 #search-form input[type="text"] {
     width: 80%;
+    padding: 1em;
     background-color: transparent;
     color: var(--neutral-100);
     border: none;
