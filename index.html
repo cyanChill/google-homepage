@@ -9,45 +9,41 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="flex">
     <header>
-        <nav>
-            <div>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                </ul>
+        <nav class="flex split">
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Store</a>
             </div>
-            <div>
-                <ul>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Images</a></li>
-                    <a href="#"><span class="material-icons">apps</span></a>
-                    <a href="#"><img src="images/gmail_profile_picture.png" alt="Gmail acount profile picture"></a>
-                </ul>
+            <div id="google-app-links" class="flex links">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <button class="mat-icon glow"><span class="material-icons md-light md-inactive">apps</span></button>
+                <a href="#"><img class="profile-image glow" src="images/gmail_profile_picture.png" alt="Gmail acount profile picture"></a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <img src="images/google_logo.png" alt="Google logo">
-        <form>
-            <input type="text">
+    <main class="flex">
+        <img id="google-logo" src="images/google_logo.png" alt="Google logo">
+        <input type="text">
+        <div id="search-actions">
             <button>Google Search</button>
             <button>I'm Feeling Lucky</button>
-        </form>
+        </div>
     </main>
 
-    <footer>
-        <div>
+    <footer class="flex split">
+        <div class="links">
             <a href="#">Advertising</a>
             <a href="#">Business</a>
             <a href="#">How Search works</a>
         </div>
-        <div>
+        <div class="links">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
-            <a href="#">Settings</a>
+            <a href="#">Settings</a> 
         </div>
     </footer>
 
