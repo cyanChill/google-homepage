@@ -59,6 +59,7 @@ input:focus {
     vertical-align: bottom;
 }
 
+/* Direct from Google Material Design Icon Docs*/
 .material-icons.md-light { color: var(--neutral-100); }
 .material-icons.md-light.md-inactive { color: var(--neutral-300); }
 
@@ -68,7 +69,7 @@ body {
     position: relative;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 /* Navbar */
@@ -79,6 +80,7 @@ header {
     padding: 1em;
 }
 
+/* Right side of navbar*/
 #google-app-links {
     flex-direction: row;
 }
@@ -87,6 +89,7 @@ header {
     color: var(--neutral-100);
 }
 
+/* "App" button styling */
 #google-app-links button {
     margin: 0;
     padding: 0;
@@ -114,6 +117,7 @@ main {
     width: min(90vw, 24em);
 }
 
+/* Contains the search bar along with the 2 buttons*/
 #search-form {
     width: 100%;
     display: flex;
@@ -147,7 +151,7 @@ main {
     border: none;
 }
 
-#search-form #search-actions {
+#search-actions {
     display: inherit;
     justify-content: center;
 }
@@ -160,8 +164,13 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 1em 1.5em;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
 }
 
+footer div {
+    margin: 0.25em;
+}
 
 
 /* Utilitiy Class */
