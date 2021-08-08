@@ -38,6 +38,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    box-shadow: 0 0 0 1px var(--accent-300);
 }
 
 img {
@@ -123,7 +124,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid var(--accent-600);
+    border: 1px solid var(--accent-300);
     border-radius: 2em;
     color: var(--neutral-100);
     padding: 0.75em;
@@ -136,6 +137,7 @@ main {
 
 #search-bar:hover {
     background-color: var(--accent-600);
+    border-color: var(--accent-600);
 }
 
 #search-form input[type="text"] {
@@ -157,7 +159,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 1em;
+    padding: 1em 1.5em;
 }
 
 
