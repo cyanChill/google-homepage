@@ -66,7 +66,6 @@ input:focus {
 body {
     background-color: var(--primary-dark);
     color: var(--neutral-100);
-    position: relative;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9375rem;
@@ -74,8 +73,6 @@ body {
 
 /* Navbar */
 header {
-    position: absolute;
-    top: 0;
     width: 100%;
     padding: 1em;
 }
@@ -110,7 +107,10 @@ header {
 /* Main Content */
 main {
     width: min(90vw, 36.375em);
+    height: 100%;
     margin-top: 15em;
+    margin-bottom: 15em;
+    padding-bottom: auto;
 }
 
 #google-logo {
@@ -160,8 +160,6 @@ main {
 /* Footer */
 footer {
     background-color: var(--secondary-dark);
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 1em 1.5em;
     font-size: 0.875rem;
