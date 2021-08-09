@@ -108,8 +108,8 @@ header {
 main {
     width: min(90vw, 36.375em);
     height: 100%;
-    margin-top: 15em;
-    margin-bottom: 15em;
+    margin-top: clamp(5em,15vh,15em);
+    margin-bottom: min(10vh, 15em);
     padding-bottom: auto;
 }
 
