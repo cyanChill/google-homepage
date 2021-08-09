@@ -156,6 +156,10 @@ main {
     justify-content: center;
 }
 
+#search-actions button {
+    font-size: 0.9rem;
+}
+
 
 /* Footer */
 footer {
