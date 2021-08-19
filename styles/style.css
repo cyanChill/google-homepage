@@ -1,192 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-    --primary-dark: #202124;
-    --secondary-dark: #171717;
+  --primary-dark: #202124;
+  --secondary-dark: #171717;
 
-    --accent-300: #999D95;
-    --accent-600: #303134;
-    --neutral-100: #fff;
-    --neutral-300: #E2E2E3;
+  --accent-300: #999d95;
+  --accent-600: #303134;
+  --neutral-100: #fff;
+  --neutral-300: #e2e2e3;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: var(--accent-300);
+  text-decoration: none;
+  color: var(--accent-300);
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 button {
-    border: none;
-    padding: 1em 1.5em;
-    margin: 0.5em;
-    border-radius: 0.5em;
-    color: var(--neutral-100);
-    background-color: var(--accent-600);
+  border: none;
+  padding: 1em 1.5em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  color: var(--neutral-100);
+  background-color: var(--accent-600);
 }
 
 button:hover {
-    cursor: pointer;
-    box-shadow: 0 0 0 1px var(--accent-300);
+  cursor: pointer;
+  box-shadow: 0 0 0 1px var(--accent-300);
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 /* Fix issue with the additional 4px below when wrapped with an anchor tag */
-.material-icons { 
-    vertical-align: bottom;
+.material-icons {
+  vertical-align: bottom;
 }
 
 /* Direct from Google Material Design Icon Docs*/
-.material-icons.md-light { color: var(--neutral-100); }
-.material-icons.md-light.md-inactive { color: var(--neutral-300); }
+.material-icons.md-light {
+  color: var(--neutral-100);
+}
+.material-icons.md-light.md-inactive {
+  color: var(--neutral-300);
+}
 
 body {
-    background-color: var(--primary-dark);
-    color: var(--neutral-100);
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9375rem;
+  background-color: var(--primary-dark);
+  color: var(--neutral-100);
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
 }
 
 /* Navbar */
 header {
-    width: 100%;
-    padding: 1em;
+  width: 100%;
+  padding: 1em;
 }
 
 /* Right side of navbar*/
 #google-app-links {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 #google-app-links a {
-    color: var(--neutral-100);
+  color: var(--neutral-100);
 }
 
 /* "App" button styling */
 #google-app-links button {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
 }
 
 #google-app-links button.glow:hover {
-    background-color: #2F3034;
-    box-shadow: 0 0 0 9px #2F3034;
+  background-color: #2f3034;
+  box-shadow: 0 0 0 9px #2f3034;
 }
 
 .profile-image {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Main Content */
 main {
-    width: min(90vw, 36.375em);
-    height: 100%;
-    margin-top: clamp(5em,15vh,15em);
-    margin-bottom: min(10vh, 15em);
-    padding-bottom: auto;
+  width: min(90vw, 36.375em);
+  height: 100%;
+  margin-top: clamp(5em, 15vh, 15em);
+  margin-bottom: min(10vh, 15em);
+  padding-bottom: auto;
 }
 
 #google-logo {
-    width: min(90vw, 24em);
+  width: min(90vw, 24em);
 }
 
 /* Contains the search bar along with the 2 buttons*/
 #search-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #search-bar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid var(--accent-300);
-    border-radius: 2em;
-    color: var(--neutral-100);
-    margin: 1.5em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--accent-300);
+  border-radius: 2em;
+  color: var(--neutral-100);
+  margin: 1.5em 0;
+}
+
+#search-bar span {
+  padding: 0 0.5rem;
 }
 
 #search-bar .material-icons {
-    color: var(--accent-300);
+  color: var(--accent-300);
 }
 
 #search-bar:hover {
-    background-color: var(--accent-600);
-    border-color: var(--accent-600);
+  background-color: var(--accent-600);
+  border-color: var(--accent-600);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 #search-form input[type="text"] {
-    width: 80%;
-    padding: 1em;
-    background-color: transparent;
-    color: var(--neutral-100);
-    border: none;
+  width: 80%;
+  padding: 1em 0.5em;
+  background-color: transparent;
+  color: var(--neutral-100);
+  border: none;
+  flex: 1;
 }
 
 #search-actions {
-    display: inherit;
-    justify-content: center;
+  display: inherit;
+  justify-content: center;
 }
 
 #search-actions button {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
-
 
 /* Footer */
 footer {
-    background-color: var(--secondary-dark);
-    width: 100%;
-    padding: 1em 1.5em;
-    font-size: 0.875rem;
-    flex-wrap: wrap;
+  background-color: var(--secondary-dark);
+  width: 100%;
+  padding: 1em 1.5em;
+  font-size: 0.875rem;
+  flex-wrap: wrap;
 }
 
 footer div {
-    margin: 0.25em;
+  margin: 0.25em;
 }
-
 
 /* Utilitiy Class */
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .split {
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .glow:hover {
-    box-shadow: 0 0 10px 3px rgba(255,255,255,0.3);
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.3);
 }
